@@ -7,24 +7,24 @@ echo
 
 pkg install pv -y >/dev/null 2>&1
 echo -e "\033[32m\033[1m]────────────────────────────────────────────[" |pv -qL 12
-echo -e "\033[33m\033[1m   WE ARE WORKING ON IT PLZ BE PATIENCE FOR IT" | pv -qL 12
+echo -e "\033[33m\033[1m   TRABAJANDO EN ELLO, POR FAVOR, TEN PACIENCIA" | pv -qL 12
 sleep 1.0
 #setup motd
 echo > motd
-echo 'Welcome to Termux!' >> motd
+echo '¡Bienvenidos a termux!' >> motd
 echo >> motd
 echo 'Wiki:            https://wiki.termux.com' >> motd
 echo 'Community forum: https://termux.com/community' >> motd
 echo 'Gitter chat:     https://gitter.im/termux/termux' >> motd
 echo "IRC channel:     #termux on freenode" >> motd
 echo >> motd
-echo 'Working with packages:' >> motd
+echo 'Trabajando con pkgs:' >> motd
 echo >> motd
-echo '* Search packages:   pkg search <query>' >> motd
-echo '* Install a package: pkg install <package>' >>  motd
-echo '* Upgrade packages:  pkg upgrade' >> motd
+echo '* Buscando pkgs:   pkg search <query>' >> motd
+echo '* Instalar pkg: pkg install <package>' >>  motd
+echo '* Actualizar pkgs:  pkg upgrade' >> motd
 echo >> motd
-echo 'Subscribing to additional repositories:' >> motd
+echo 'Suscribirse a repositorios adicionales:' >> motd
 echo >> motd
 echo '* Root: pkg install root-repo' >> motd
 echo '* Unstable: pkg install unstable-repo' >> motd
@@ -34,20 +34,20 @@ echo 'Report issues at https://termux.com/issues' >> motd
 echo >> motd
 
 #default bash.bashrc
-echo "# Command history tweaks:" >> bash.bashrc 
-echo '# - Append history instead of overwriting' >> bash.bashrc
-echo '#   when shell exits.' >> bash.bashrc
-echo '# - When using history substitution, do not' >> bash.bashrc
-echo '#   exec command immediately.' >> bash.bashrc
-echo '# - Do not save to history commands starting' >> bash.bashrc
-echo '#   with space.' >> bash.bashrc
-echo "# - Do not save duplicated commands." >> bash.bashrc
+echo "# Ajustes en el historial de comandos:" >> bash.bashrc 
+echo '# - Anexar el historial en lugar de sobrescribirlo' >> bash.bashrc
+echo '#   cuando sale el shell.' >> bash.bashrc
+echo '# - Cuando utilice la sustitución de historial, no' >> bash.bashrc
+echo '#   exec inmediatamente.' >> bash.bashrc
+echo '# - No guardar en el historial los comandos que se inician' >> bash.bashrc
+echo '#   con espacio.' >> bash.bashrc
+echo "# - No guarde comandos duplicados." >> bash.bashrc
 
 echo 'shopt -s histappend' >> bash.bashrc
 echo 'shopt -s histverify' >> bash.bashrc
 echo 'export HISTCONTROL=ignoreboth' >> bash.bashrc
 
-echo '# Default command line prompt.' >> bash.bashrc
+echo '# Símbolo del sistema de línea predeterminado.' >> bash.bashrc
 echo 'PROMPT_DIRTRIM=2' >> bash.bashrc
 echo "PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\] '" >> bash.bashrc
 
@@ -76,4 +76,4 @@ sleep 0.5
 clear
 echo
 echo
-echo -e "\033[33m\033[1m Deleting Succesfully " | pv -qL 7
+echo -e "\033[33m\033[1m Eliminación exitosa " | pv -qL 7
