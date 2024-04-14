@@ -33,7 +33,7 @@ termux-tts-speak Ingresa tu nombre.
 read -p $'       \e[33m\033[1m\033[33m[\033[31m+\033[33m] \033[37mINPUT \033[33mUSERNAME :\033[32m ' user
 termux-tts-speak Ingresa tu contra.
 read -s -p $'       \e[32m\033[1m\033[33m[\033[31m+\033[33m] \033[37mINPUT \033[33mPASSWORD :\033[33m ' pass                                                
-if [[ \$pass == $password && \$user == $username ]]; then
+if [[ \$pass == $Contra && \$user == $Nombre ]]; then
 sleep 3
 clear
 cd $HOME
