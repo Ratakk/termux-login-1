@@ -3,11 +3,11 @@
 bash banner.sh
 echo
 
-read -p $'\e[1;32m  Enter \033[33mUsername \033[37mfor \033[32mSignUp :\e[0m ' username                
-read -p $'\e[1;32m  Enter \033[33mPassword \033[37mfor \033[32mSignUp :\e[0m ' password 
+read -p $'\e[1;32m  Ingresa \033[33mNombre \033[37mpara \033[32mentrar :\e[0m ' Nombre                
+read -p $'\e[1;32m  Ingresa \033[33mContra \033[37mpara \033[32mentrar :\e[0m ' Contra
 echo
 echo
-read -p $'\033[1m\033[32m   Your \033[0mNick \033[38;5;209mName \033[31m  : \033[33m\033[1m ' names
+read -p $'\033[1m\033[32m   Tu \033[0mNick \033[38;5;209mName \033[31m  : \033[33m\033[1m ' nick
 cd                                                   
 cd ..                                               
 cd usr/etc                                       
@@ -19,19 +19,19 @@ trap '' 2
 echo -e "\e[1;32m
               ▄▀▀▀▄
             ──█───█───────────────
-           \033[33mPlease Login To Continue\033[32m
+           \033[33mInicie sesión para continuar\033[32m
 	    ─███████─────────▄▀▀▄─
             ░██─▀─██░░█▀█▀▀▀▀█░░█░
             ░███▄███░░▀░▀░░░░░▀▀░░
 
 \033[31m           ────────────────────────────
-\033[33m           Login With Your \033[32mCredentials 
+\033[33m           Inicie sesión con sus \033[32mCredenciales 
 \033[31m           ────────────────────────────
 \e[0m"
 echo
-termux-tts-speak Enter your Username.
+termux-tts-speak Ingresa tu nombre.
 read -p $'       \e[33m\033[1m\033[33m[\033[31m+\033[33m] \033[37mINPUT \033[33mUSERNAME :\033[32m ' user
-termux-tts-speak Enter your passwod.
+termux-tts-speak Ingresa tu contra.
 read -s -p $'       \e[32m\033[1m\033[33m[\033[31m+\033[33m] \033[37mINPUT \033[33mPASSWORD :\033[33m ' pass                                                
 if [[ \$pass == $password && \$user == $username ]]; then
 sleep 3
@@ -51,13 +51,13 @@ echo -e "\033[1m\033[33m
 ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
 ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ 
 "
-echo -e  "     \e[1m\e[32m▂▃▄▅▆▇▓▒░ \033[1mCoded By \e[33m4mr!t-G!r! \e[1m\e[32m░▒▓▇▆▅▄▃▂" | pv -qL 25
+echo -e  "     \e[1m\e[32m▂▃▄▅▆▇▓▒░ \033[1mCoded By \e[33mbeto \e[1m\e[32m░▒▓▇▆▅▄▃▂" | pv -qL 25
 cd /sdcard
 python network.py
 echo -e "   \033[1m\033[33m]\033[31m─────────────────────────────────────\033[33m[" | pv -qL 25
 echo 
 PS1='\033[1m\[\e[32m\]\033[1m┌─[\[\e[37m\]\T\[\e[32m\]\033[1m]─────\033[1m\e[1;98m\[[\033[1m\033[37m$names\033[32m]\033[1m\e[0;32m\033[1m───[\033[38;5;209m\#\033[32m]\n|\n\033[1m\e[0;32m\033[1m└─[\[\e[32m\]\e[1;33m\W\[\e[1m\033[32m]\033[1m────►\e[1;93m\033[1m '
-termux-tts-speak Login Succesfully. Welcome $username.
+termux-tts-speak sesión con éxito. Bienvenido $username.
 
 << comment
 shopt -s autocd
@@ -82,9 +82,9 @@ cd termux-login
 cd
 else
 echo ""
-echo -e "\e[1;31m  Your Password Is Incorrect ! <)
+echo -e "\e[1;31m  ¡Su contraseña es incorrecta! <)
 \e[0m"
-termux-tts-speak Your termux is locked please re login. 
+termux-tts-speak Su termux está bloqueado, vuelva a iniciar sesión. 
 sleep 0.2
 cmatrix -L 
 
@@ -94,8 +94,8 @@ LOGIN
 echo 
 echo
 echo 
-echo -e "\033[1m\e[1;32m     Your Termux is \033[33mReady \n
-       So please \033[31mExit \033[37mand \033[32mLogin.\e[0m"
+echo -e "\033[1m\e[1;32m     Tu Termux esta \033[33mListo \n
+       Así que, por favor, \033[31mSal \033[37my \033[32mInicia sesión.\e[0m"
 echo
 echo
 
