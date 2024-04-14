@@ -354,17 +354,12 @@ echo -e "\033[32m\033[1m
               \033[33m ╚═╗││ ┬│││  ║ ║├─┘ \033[32m 
                ╚═╝┴└─┘┘└┘  ╚═╝┴    
   \033[33m________________________________________________
-  \033[31mWarning:\033[37mDon't Forget Your \033[35mUsernames \033[37mand \033[35mPassword
+  \033[31mPeligro:\033[37mNo olvide su \033[35mNombre de usuario \033[37mand \033[35mContraseña
   \033[33m________________________________________________
 
-     \033[1m\033[36mTool Name       \033[32m: \033[33mTermux-Login
-     \033[1m\033[36mAuthor_Name     \033[32m: \033[33mAmrit Giri 
-     \033[1m\033[36mYouTube_Channel \033[32m: \033[33mLegendspam
-     \033[1m\033[36mGitHub_Link     \033[32m: \033[33mhttps://github.com/amrit-giri/
-     \033[1m\033[36mWebSite         \033[32m: \033[33mamrit-giri.com.np
-     \033[1m\033[36mCountry         \033[32m: \033[33mNepal
-     \033[1m\033[36mState           \033[32m: \033[33mLumbini 
-
+     \033[1m\033[36mNombre-tool       \033[32m: \033[33mTermux-Login
+     \033[1m\033[36mAutor-Nombre     \033[32m: \033[33mbeto
+     \033[1m\033[36mGitHub_Link     \033[32m: \033[33mhttps://github.com/Ratakk/
   \033[31m________________________________________________
 " | pv -qL 42
 
